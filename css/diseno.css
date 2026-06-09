@@ -1,0 +1,50 @@
+/* Estilos de diseno - rama diseno */
+.hero h1 {
+  letter-spacing: -0.5px;
+  text-shadow: 0 4px 20px rgba(0, 200, 83, 0.35);
+}
+
+.partido-card {
+  border-top: 3px solid var(--color-primario);
+  position: relative;
+  overflow: hidden;
+}
+
+.partido-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-primario), var(--color-secundario));
+}
+
+.miembro:hover {
+  transform: translateY(-3px);
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  color: var(--color-secundario);
+  transition: color 0.3s ease;
+}
+
+.contacto {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02) 0%, rgba(0, 200, 83, 0.06) 100%);
+}
+
+.cuota:hover {
+  background: rgba(0, 200, 83, 0.2);
+  border-color: var(--color-primario);
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.hero-badge {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
